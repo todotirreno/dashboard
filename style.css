@@ -1,3 +1,6 @@
+:root {
+  --aside-color: rgb(102, 152, 228);
+}
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +49,7 @@ main {
 }
 
 aside {
-  background-color: rgb(102, 152, 228);
+  background-color: var(--aside-color);
   color: white;
   font-weight: bold;
 }
@@ -66,4 +69,12 @@ main {
   border-style: none;
   border-radius: 20px;
   width: 100%;
+}
+
+button {
+  background-color: var(--aside-color);
+  padding: 10px 30px;
+  color: white;
+  border-radius: 20px;
+  border-style: none;
 }
