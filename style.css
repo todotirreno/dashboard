@@ -77,4 +77,23 @@ button {
   color: white;
   border-radius: 20px;
   border-style: none;
+  cursor: pointer;
+}
+
+[type="file"] {
+  visibility: collapse;
+  /* position: absolute; */
+  width: 110px;
+}
+[type="file"]::before {
+  visibility: visible;
+  position: static;
+  content: "Upload";
+  display: inline-block;
+  background-color: var(--aside-color);
+  padding: 10px 30px;
+  color: white;
+  border-radius: 20px;
+  border-style: none;
+  cursor: pointer;
 }
