@@ -17,6 +17,11 @@ li {
   list-style-type: none;
 }
 
+input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 aside {
   grid-area: aside;
 }
@@ -58,4 +63,7 @@ main {
 [type="search"] {
   border-color: rgb(207, 207, 207);
   background-color: rgb(232, 236, 240);
+  border-style: none;
+  border-radius: 20px;
+  width: 100%;
 }
