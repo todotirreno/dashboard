@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+.lower-header .avatar {
+  height: 5em;
+}
+
+.upper-header .avatar,
+.trending .avatar {
+  height: 2em;
+}
