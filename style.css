@@ -5,15 +5,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1em;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
   font-weight: normal;
   font-family: Roboto, sans-serif;
-
+  font-size: 1em;
   display: grid;
-  grid: "aside header" 1fr "aside main" 4fr / 1fr 4fr;
+  /* grid: "aside header" 1fr "aside main" 4fr / 1fr 4fr; */
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "aside right";
 }
 
 li {
@@ -25,16 +28,35 @@ input {
   appearance: none;
 }
 
-aside {
-  grid-area: aside;
+.right {
+  grid-area: right;
 }
 
-header {
-  grid-area: header;
+.branding {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 
-main {
-  grid-area: main;
+nav {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  gap: 50px;
+}
+
+ul {
+  display: grid;
+  gap: 20px;
+}
+
+.branding,
+li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  text-align: left;
+  align-items: center;
 }
 
 .lower-header .avatar {
@@ -52,6 +74,11 @@ aside {
   background-color: var(--aside-color);
   color: white;
   font-weight: bold;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 20px;
+  gap: 50px;
 }
 
 aside .icon {
@@ -96,4 +123,12 @@ button {
   border-radius: 20px;
   border-style: none;
   cursor: pointer;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.2em;
 }
