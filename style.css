@@ -8,10 +8,25 @@
 body {
   font-weight: normal;
   font-family: Roboto, sans-serif;
+
+  display: grid;
+  grid: "aside header" 1fr "aside main" 4fr / 1fr 4fr;
 }
 
 li {
   list-style-type: none;
+}
+
+aside {
+  grid-area: aside;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
 }
 
 .lower-header .avatar {
