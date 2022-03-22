@@ -89,6 +89,8 @@ aside .icon {
 
 main {
   background-color: rgb(232, 236, 240);
+  display: grid;
+  grid-template: 2fr 1fr / 4fr 1fr;
 }
 
 [type="search"] {
@@ -97,6 +99,8 @@ main {
   border-style: none;
   border-radius: 20px;
   width: 100%;
+  height: 2em;
+  padding: 3px 15px;
 }
 
 button {
@@ -106,12 +110,14 @@ button {
   border-radius: 20px;
   border-style: none;
   cursor: pointer;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 [type="file"] {
   visibility: collapse;
   /* position: absolute; */
-  width: 110px;
+  width: 130px;
 }
 [type="file"]::before {
   visibility: visible;
@@ -124,6 +130,9 @@ button {
   border-radius: 20px;
   border-style: none;
   cursor: pointer;
+
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 h1 {
@@ -132,4 +141,61 @@ h1 {
 
 h2 {
   font-size: 1.2em;
+}
+
+header {
+  display: grid;
+  gap: 0px;
+  padding: 0 50px;
+  font-weight: 800;
+}
+
+.upper-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+  /* justify-content: space-between; */
+}
+
+.header-upper-left {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-upper-right {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.username {
+  font-size: 1.3em;
+}
+
+.lower-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.buttons {
+  align-self: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.lower-header-left {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.projects {
+  grid-area: 1 / 1 / 3 / 2;
 }
